@@ -1,0 +1,79 @@
+<style type="text/css">
+
+.contactus{
+	margin-top: 100px;
+}
+
+</style>
+
+
+<section class="contactus">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 col-md-12">
+				<br>
+				<h2 style="font-family: 'Raleway', sans-serif; text-align: left; color: #282896; font-size: 25px;">Our Contact</h2>
+				<p style="text-align: justify;">Reach out to Be a Hydro 4 Life on these dedicated avenues.</p>
+				<p>
+                <span><i class="fa fa-phone" aria-hidden="true"></i></span><span style="font-weight: 300;"> 6147984100</span><br>
+                <span><i class="fa fa-whatsapp" aria-hidden="true"></i></span><span style="font-weight: 300;"> 6147984100</span><br>
+                <span><i class="fa fa-envelope" aria-hidden="true"></i></span><span style="font-weight: 300;">  beablessingm@beablessingm.org</span><br>
+                <span><i class="fa fa-map-marker" aria-hidden="true"></i></span><span style="font-weight: 300;"> 6195 Emerald Parkway One North Dublin, OH 43016</span><br>
+				</p>
+				<p>
+				 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3051.4788794716856!2d-83.11763278513939!3d40.10933028220238!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88389325d9e37447%3A0x5ecb92108ec46518!2sEmerald+Pkwy%2C+Dublin%2C+OH%2C+USA!5e0!3m2!1sen!2sgh!4v1563462737561!5m2!1sen!2sgh" width="400" height="280" frameborder="0" style="border:0" allowfullscreen></iframe>
+				</p>
+			</div>
+			<div class="col-lg-6 col-md-12">
+				<br>
+				<h3 style="font-family: 'Raleway', sans-serif; text-align: left; color: #282896; font-size: 25px;">Reach out to Us.</h3>
+
+                 <%= form_for(@contact) do |f| %>
+				  <% if @contact.errors.any? %>
+				    <div id="error_explanation">
+				      <h2><%= pluralize(@contact.errors.count, "error") %> prohibited this contact from being saved:</h2>
+
+				      <ul>
+				      <% @contact.errors.full_messages.each do |message| %>
+				        <li><%= message %></li>
+				      <% end %>
+				      </ul>
+				    </div>
+				  <% end %>
+				   <% if notice %>
+				<div class="alert alert-success alert-dismissible" role="alert">
+				  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				  <p class="notice"><%= notice %></p>
+				</div>
+				<% end %>
+
+				  <div class="form-group">
+				    <label>Your Name</label>
+				    <%= f.text_field :name, :class => "form-control", :placeholder => "Enter Your Name" %>
+				  </div>
+
+				  <div class="form-group">
+				    <label>Your Phone number</label>
+				    <%= f.text_field :phonenumber, :class => "form-control", :placeholder => "Enter Your Phone Number" %>
+				  </div>
+
+				  <div class="form-group">
+				    <label>Your Email</label>
+				    <%= f.text_field :email, :class => "form-control", :placeholder => "Enter Your Email" %>
+				  </div>
+
+				  <div class="form-group">
+				    <label>Message for Us</label>
+				    <%= f.text_area :message, :class => "form-control", :rows => "5", :placeholder => "Enter Your Message" %>
+				  </div>
+
+				  <div class="form-group">
+				    <%= f.submit "Submit", :class => "btn btn-primary" %>
+				  </div>
+				<% end %>
+
+
+			</div>
+		</div>
+	</div>
+</section>

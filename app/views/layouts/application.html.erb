@@ -298,16 +298,16 @@ box-shadow: 0px 1px 3px 2px rgba(0,0,0,0.09);
         </div>
       </li> -->
             <li class="nav-item">
-              <a class="nav-link" target="_blank" href="/aboutus">About Us</a>
+              <a class="nav-link" href="/aboutus">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" target="_blank" href="/completedprojects">Completed projects</a>
+              <a class="nav-link" href="/completedprojects">Completed projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="/pendingprojects">Pending Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" target="_blank" href="/contactus">Contact Us</a>
+              <a class="nav-link" href="/contactus">Contact Us</a>
             </li>
             
           </ul>
@@ -330,7 +330,14 @@ box-shadow: 0px 1px 3px 2px rgba(0,0,0,0.09);
       </div>
     </nav>
 
-  <body>
+    <% if notice %>
+    <div class="alert alert-success alert-dismissible" style="position: absolute; top: 100px; z-index: 999;" role="alert">
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      <p class="notice"><%= notice %></p>
+    </div>
+  <% end %>
+
+  <body style="font-family: 'Exo 2', sans-serif;">
     <%= yield %>
 
          <footer class="py-5" style="background-color: #282896;">

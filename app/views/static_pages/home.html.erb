@@ -72,6 +72,99 @@ top: 15px;
   height: 1.5px;
 }
 
+zoomin img {
+  height: 110px;
+  width: 110px;
+  -webkit-transition: all 1s ease;
+     -moz-transition: all 1s ease;
+      -ms-transition: all 1s ease;
+          transition: all 1s ease;
+}
+
+.zoomin img:hover {
+  width: 180px;
+  height: 180px;
+}
+
+.image-box{
+  width:100%;
+  overflow:hidden;
+}
+
+.imagep1 {
+  width:100%;
+  height:250px;
+  
+  background:linear-gradient(0deg,rgba(40,40,150,0.5),rgba(40,40,150,0.4)),url(https://res.cloudinary.com/nikasemo/image/upload/v1563466819/5d309c1c3ff0d_m2tncq.png);
+  background-position:center;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+} 
+.imagep1:hover {
+  transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2); /* IE 9 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')"; /* IE8 */
+   filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand'); /* IE6 and 7 */ 
+}
+
+.imagep2 {
+  width:100%;
+  height:250px;
+  
+  background:linear-gradient(0deg,rgba(40,40,150,0.4),rgba(40,40,150,0.5)),url(https://res.cloudinary.com/nikasemo/image/upload/v1563466875/5d309c3a8699f_troadt.png);
+  background-position:center;
+  transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+} 
+.imagep2:hover {
+  transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  -ms-transform: scale(1.2); /* IE 9 */
+  -ms-filter: "progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand')"; /* IE8 */
+   filter: progid:DXImageTransform.Microsoft.Matrix(M11=1.5, M12=0, M21=0, M22=1.5, SizingMethod='auto expand'); /* IE6 and 7 */ 
+}
+
+.housedescribe{
+  text-align: center;
+}
+
+
+
+.housedescribe a{
+  text-align: center; 
+  position:relative; 
+  top: 110px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  padding: 15px;
+}
+
+.housedescribe a:hover{
+  text-align: center; 
+  position:relative; 
+  top: 110px;
+  font-size: 16px;
+  font-weight: 700;
+  color: white;
+  font-family: 'Raleway', sans-serif;
+  letter-spacing: 2px;
+  border: 3px solid #ffffff;
+  padding: 15px;
+}
 
 
 </style>
@@ -92,8 +185,8 @@ top: 15px;
           <!-- Slide Two - Set the background image for this slide in the line below -->
            <div class="carousel-item active" style="background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://res.cloudinary.com/nikasemo/image/upload/v1563160369/h4lslide4_fy2xyx.jpg'); background-position:center;">
             <div class="carousel-caption d-md-block">
-              <h3 class="capttxt" style="">Lorem ipsum nostrud amet dolore.</h3>
-              <p style="font-family: 'Exo 2', sans-serif; letter-spacing: 2px; text-shadow: 0px 4px 7px rgba(150, 150, 150, 0.65); text-align: right; font-weight: 300;">Consequat irure laboris dolor adipisicing mollit eu amet amet duis est veniam aliqua irure irure laboris dolor adipisicing.</p>
+              <h3 class="capttxt" style="">Water should be life right?</h3>
+              <p style="font-family: 'Exo 2', sans-serif; letter-spacing: 2px; text-shadow: 0px 4px 7px rgba(150, 150, 150, 0.65); text-align: right; font-weight: 300;">Our objective is to provide clean and safe drinking water for people in deprived places in Africa.</p>
               <p style="text-align: right;"><a href="" class="btn btn-primary btn-lg btnhomeslider">Learn More</a></p>
             </div>
           </div>
@@ -101,8 +194,8 @@ top: 15px;
           <!-- Slide Three - Set the background image for this slide in the line below -->
            <div class="carousel-item" style="background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://res.cloudinary.com/nikasemo/image/upload/v1563160370/h4lslide1_qdnvlr.jpg'); background-position:center;)">
             <div class="carousel-caption d-md-block">
-              <h3 class="capttxt" style="">Lorem ipsum nostrud amet dolore.</h3>
-              <p style="font-family: 'Exo 2', sans-serif; letter-spacing: 2px; text-shadow: 0px 4px 7px rgba(150, 150, 150, 0.65);text-align: right; font-weight: 300;">Consequat irure laboris dolor adipisicing mollit eu amet amet duis est veniam aliqua irure irure laboris dolor adipisicing.</p>
+              <h3 class="capttxt" style="">Creating Awareness on Hygiene.</h3>
+              <p style="font-family: 'Exo 2', sans-serif; letter-spacing: 2px; text-shadow: 0px 4px 7px rgba(150, 150, 150, 0.65);text-align: right; font-weight: 300;">We intend to provide education on water hygiene, treatment and conservation for communites.</p>
               <p style="text-align: right;"><a href="" class="btn btn-primary btn-lg btnhomeslider">Learn More</a></p>
             </div>
           </div>
@@ -110,8 +203,8 @@ top: 15px;
           <!-- Slide Three - Set the background image for this slide in the line below -->
            <div class="carousel-item" style="background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://res.cloudinary.com/nikasemo/image/upload/v1563160369/h4lslide3_rodj96.jpg'); background-position:center;)">
             <div class="carousel-caption d-md-block">
-              <h3 class="capttxt" style="">Lorem ipsum nostrud amet dolore.</h3>
-              <p style="font-family: 'Exo 2', sans-serif; letter-spacing: 2px; text-shadow: 0px 4px 7px rgba(150, 150, 150, 0.65);text-align: right; font-weight: 300;">Consequat irure laboris dolor adipisicing mollit eu amet amet duis est veniam aliqua irure irure laboris dolor adipisicing.</p>
+              <h3 class="capttxt" style="">Empowering Communities.</h3>
+              <p style="font-family: 'Exo 2', sans-serif; letter-spacing: 2px; text-shadow: 0px 4px 7px rgba(150, 150, 150, 0.65);text-align: right; font-weight: 300;">We believe in empowering and assisting deprived communities to execute self-funded water projects.</p>
               <p style="text-align: right;"><a href="" class="btn btn-primary btn-lg btnhomeslider">Learn More</a></p>
             </div>
           </div>
@@ -119,8 +212,8 @@ top: 15px;
           <!-- Slide Three - Set the background image for this slide in the line below -->
            <div class="carousel-item" style="background:linear-gradient(0deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('https://res.cloudinary.com/nikasemo/image/upload/v1563160369/h4lslide2_lee1px.jpg'); background-position:center;")">
             <div class="carousel-caption d-md-block">
-              <h3 class="capttxt" style="">Lorem ipsum nostrud amet dolore.</h3>
-              <p style="font-family: 'Exo 2', sans-serif; letter-spacing: 2px; text-shadow: 0px 4px 7px rgba(150, 150, 150, 0.65);text-align: right; font-weight: 300;">Consequat irure laboris dolor adipisicing mollit eu amet amet duis est veniam aliqua irure irure laboris dolor adipisicing.</p>
+              <h3 class="capttxt" style="">Awareness and Hygiene for Kids.</h3>
+              <p style="font-family: 'Exo 2', sans-serif; letter-spacing: 2px; text-shadow: 0px 4px 7px rgba(150, 150, 150, 0.65);text-align: right; font-weight: 300;">We help children understand the benefits of good hygiene and how they can impart society with their knowledge of this.</p>
               <p style="text-align: right;"><a href="" class="btn btn-primary btn-lg btnhomeslider">Learn More</a></p>
             </div>
           </div>
@@ -138,7 +231,7 @@ top: 15px;
     </header>
  </section>
 
- <section class="py-5 aboutwistech">
+ <section class="py-5 aboutwistech" style="background-color: #f7f7f7;">
       <div class="container">
        
         <div class ="row">
@@ -153,9 +246,50 @@ top: 15px;
 		  </p>
           </div>
           <div class="col-lg-3 col-sm-12">
-            <img src="https://res.cloudinary.com/nikasemo/image/upload/v1563160900/h4llogoweb_hgwpw1.jpg" width="200px" height="200px" class="img-fluid">
+            <img src="https://res.cloudinary.com/nikasemo/image/upload/v1563466240/h4llogoweb_jjx7wf.png" width="200px" height="200px" class="img-fluid">
           </div>
         </div>
       </div>
+    </section>
+
+
+    <section>
+
+    	 <h1 style="font-family: 'Exo 2', sans-serif; text-align: center; margin-top: 30px; color: #282896; font-size: 25px;" class="js-reveal">Our Projects</h1>
+        <hr align="center" width="10%" class="divederlined">
+           <p style="font-weight: 300; font-size: 14px; text-align: center; line-height: 25px; color: #000000; font-family: 'Exo 2', sans-serif;" class="js-reveal">
+           HYDRO4LIFE has set on its mind to build boreholes and give people in rural Africa access to clean potable water.
+		  </p>
+
+    	<div class="container">
+			<div class="row justify-content-center" style="margin-top: 20px; margin-bottom: 50px;">
+			  <div class="col-md-8 col-md-offset-2">
+			  	<div class="row no-gutters">
+
+			  		<div class="col-lg-6 zoomimgbg1">
+			       <div class="image-box">
+			        <div class="imagep1">
+			          <h3 class="housedescribe">
+			          <a href="/completedprojects" style="text-decoration:none;">Completed Projects</a>
+			          </h3>
+			        </div>
+			        </div>
+			      </div>
+
+			      <div class="col-lg-6 zoomimgbg1">
+			       <div class="image-box">
+			        <div class="imagep2">
+			          <h3 class="housedescribe">
+			          <a href="/pendingprojects" style="text-decoration:none;">Pending Projects</a>
+			          </h3>
+			        </div>
+			        </div>
+			      </div>
+
+			  	</div>
+			  </div>
+			</div>
+		</div>
+
     </section>
 

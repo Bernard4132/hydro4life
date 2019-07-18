@@ -17,7 +17,7 @@ class StaticPagesController < ApplicationController
 	end
 
 	def contactus
-		
+		@contact = Contact.new
 	end
 	
 	
