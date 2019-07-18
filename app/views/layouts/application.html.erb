@@ -111,8 +111,9 @@ font-family: 'Poppins', sans-serif;
 .navbar-light .navbar-nav .active > .nav-link,
 .navbar-light .navbar-nav .nav-link.show,
 .navbar-light .navbar-nav .nav-link.active {
-  color: #2ff4fd;
-  font-weight: 300;
+  color: #282896;
+  font-weight: 500;
+  border-bottom: 2px solid #282896;
  }
 
  .dropdown-menu {
@@ -266,7 +267,7 @@ box-shadow: 0px 1px 3px 2px rgba(0,0,0,0.09);
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-              <a class="nav-link" href="/">Home
+              <a class="nav-link  <%= 'active' if current_page?(root_path) %>" href="/">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
@@ -298,16 +299,16 @@ box-shadow: 0px 1px 3px 2px rgba(0,0,0,0.09);
         </div>
       </li> -->
             <li class="nav-item">
-              <a class="nav-link" href="/aboutus">About Us</a>
+              <a class="nav-link  <%= 'active' if current_page?(aboutus_path) %>" href="/aboutus">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/completedprojects">Completed projects</a>
+              <a class="nav-link <%= 'active' if current_page?(completedprojects_path) %>" href="/completedprojects">Completed projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/pendingprojects">Pending Projects</a>
+              <a class="nav-link <%= 'active' if current_page?(pendingprojects_path) %>" href="/pendingprojects">Pending Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/contactus">Contact Us</a>
+              <a class="nav-link <%= 'active' if current_page?(contactus_path) %>" href="/contactus">Contact Us</a>
             </li>
             
           </ul>
