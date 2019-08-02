@@ -16,6 +16,10 @@ class StaticPagesController < ApplicationController
 		
 	end
 
+	def donate
+		
+	end
+
 	def contactus
 		@contact = Contact.new
 	end

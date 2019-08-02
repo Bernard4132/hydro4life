@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   match '/completedprojects' , to: 'static_pages#completedprojects', via: 'get'
   match '/pendingprojects' , to: 'static_pages#pendingprojects', via: 'get'
   match '/contactus' , to: 'static_pages#contactus', via: 'get'
+  match '/donate' , to: 'static_pages#donate' , via: 'get'
 end
